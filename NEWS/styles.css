@@ -1,0 +1,67 @@
+body {
+  background-image: url('ocean.gif');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%; 
+  font-family: "Georgia", serif;
+  }
+
+
+  h1 {
+    color:aliceblue;
+}
+p {
+    color:aliceblue;
+}
+ul {
+    color:aliceblue;
+}
+
+a:link {
+  color: Deepskyblue;
+}
+
+a:visited {
+  color:lightseagreen;
+  
+}   
+
+a: hover {
+   color:  ;
+}
+
+a: active {
+   color:
+    }
+ 
+a {font-size: 20}
+
+#h1 {
+    text-align: center;
+    font-size: 45px;
+    color:blanchedalmond
+}
+
+.tunga {
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 35%;
+height: 50%;
+    }
+
+    h1 {
+      color:blanchedalmond
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    #li1, #li2, #li3, #li4 {
+      text-align: left;
+      font-size: 25px;
+      color:aliceblue;
+  }
+
+
