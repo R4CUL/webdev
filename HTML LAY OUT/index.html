@@ -1,0 +1,134 @@
+<html lang="en">
+    <head>
+        <title>Lay Out</title>
+
+    <style type="text/css">
+
+        *
+        {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+#logo {
+    width: 100%;
+    min-height: 50px;
+    background-color: lightgray;
+    padding-left: 2%;
+    line-height: 50px;
+    margin-bottom:10px;
+}
+
+#nav {
+    width: 100%;
+    min-height: 30px;
+    line-height: 30px;
+    background-color: lightgray;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#header {
+    width: 100%;
+    min-height: 30px;
+    line-height: 100px;
+    background-color: lightgray;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#mainDIV {
+    width: 100%;
+    margin-bottom:10px;
+}
+
+#sidebarDIV {
+        width: 20%;
+        min-height: 400px;
+        background-color: lightgray;
+        float: left;
+        text-align: center;
+        min-height: 400px;
+        }
+
+#bodyDIV {
+        width: 75%;
+        min-height: 400px;
+        background-color: lightgray;
+        float: right;
+        text-align: center;
+        min-height: 400px;
+        margin-bottom: 10px;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear:both;
+        }
+
+#footerDIV {
+    width: 100%;
+        min-height: 50px;
+        background-color: lightgray;
+        text-align: center;
+        float:right;
+        line-height: 50px;
+       
+}
+       
+#wrapperDIV {
+    width:98%; 
+    margin: auto;
+}
+
+    </style>   
+    </head>
+
+
+
+    <body>
+
+<div id="wrapperDIV">
+
+<div id="logo">
+    LOGO
+</div>
+
+
+<div id="nav">
+    Navigation
+</div>
+
+<div id="header">
+    Header 
+</div>
+
+
+
+<div id="mainDIV" class="clearfix">
+
+<div id="sidebarDIV">
+    Side Bar
+</div>
+
+
+<div id="bodyDIV">
+    Body
+</div>
+
+<div id="footerDIV">
+    Footer
+</div>
+
+</div>
+
+</div>
+
+
+
+
+
+    </body>
+</html>
