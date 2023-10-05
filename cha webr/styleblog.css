@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .bgpic {
+    width: 99.2%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+      url(./Images/chabgp.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* HEADER/NAVIGATION */
+  .navbar {
+    width: 95%;
+    margin: auto;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    width: 120px;
+    cursor: pointer;
+    margin-right: 130px;
+  }
+  
+  img {
+    mix-blend-mode: multiply;
+  }
+  
+  .navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 5px;
+    position: relative;
+    margin-bottom: 50px;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  .navbar ul li::after {
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10;
+    transition: 0.5s;
+  }
+  
+  .navbar ul li:hover::after {
+    width: 100%;
+  }
+  
+
+  
+  
+  
+  
+  
+  
+  
