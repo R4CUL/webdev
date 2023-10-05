@@ -1,0 +1,69 @@
+<html>
+  <head>
+    <title>web layout</title>
+    <style>
+      nav {
+        background-color: aquamarine;
+        height: 13%;
+        margin-top: -5px;
+      }
+
+      nav {
+        display: flex;
+        flex-direction: row-reverse;
+      }
+
+      #navlinks {
+        display: flex;
+        width: 25%;
+        justify-content: space-around;
+        color: aliceblue;
+        align-items: center;
+      }
+
+      #content {
+        height: 100%;
+        background-color: white;
+        margin-bottom: 10px;
+        margin-top: -10px;
+      }
+
+      a {
+        font-size: 2rem;
+      }
+
+      footer {
+        height: 20%;
+        background-color: gray;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="flex 2"></div>
+        <div id="navlinks">
+          <a href="#">Home</a>
+          <a href="./aboutus.html">About Us</a>
+          <a href="./faq.html">FAQ</a>
+        </div>
+      </nav>
+    </header>
+
+    <div id="content">
+      <h1>Hello Lord!</h1>
+    </div>
+
+    <footer>
+      <div style="flex: 1"></div>
+      <div>
+        <h5 style="color: white">Copyright law: WEBDEV11 2023</h5>
+      </div>
+      <div style="flex: 1"></div>
+    </footer>
+  </body>
+</html>
