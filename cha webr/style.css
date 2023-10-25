@@ -1,0 +1,591 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.bgpic {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url(./Images/chabgp.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/* HEADER/NAVIGATION */
+.navbar {
+  width: 95%;
+  margin: auto;
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 120px;
+  cursor: pointer;
+  margin-right: 130px;
+}
+
+img {
+  mix-blend-mode: multiply;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 5px;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+.navbar ul li::after {
+  content:"";
+  height: 3px;
+  width: 0%;
+  background: #009688;
+  position: absolute;
+  left: 0;
+  bottom: -10;
+  transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+  width: 100%;
+}
+
+/* CUSTOM SCROLLBAR */
+
+::-webkit-scrollbar{
+  width: 15px;
+}
+
+::-webkit-scrollbar-track{
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(#009688, #04cab6, #03fae1);
+}
+
+
+/* CONTENT */
+
+.content {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #fff;
+}
+
+.content h1 {
+  font-size: 70px;
+  margin: 0%; 
+  margin-top: 9%;
+}
+
+.content p {
+  margin: 20px auto;
+  font-weight: 100;
+  line-height: 25px;
+}
+
+
+/* BUTTONS */
+.button1 {
+  width: 250px; 
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #009688;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.span1 {
+  background: #009688;
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.button1:hover span {
+  width: 100%;
+}
+
+.button1:hover {
+  border: 2px solid #009688;
+}
+
+
+/* STRAND CONTENT */
+
+.titleH1 {
+  margin-top: 80px;
+  margin-bottom: 70px;
+  }
+
+.strand {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  margin-top: -2%;
+  margin-bottom: 40px;
+}
+
+.strand-col {
+  flex-basis: 31%;
+  background: #00968749; 
+  border-radius: 10px;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+.strand-col:hover {
+  box-shadow: 0 0 20px 0px #009688;
+}
+
+.strand2 {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+p {
+  color: black;
+  font-size: 14px;
+  font-weight: 300;
+  font-weight: 22px;
+  padding: 10px;
+}
+
+.row {
+  margin-top: 1%;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+h3 {
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+
+/* BUILDINGS */
+
+.building {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.building-col {
+  flex-basis: 32%;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: -15%;
+}
+
+.building-col img{
+  width: 100%;
+  height: 70%;
+}
+
+.layer {
+  background-color: transparent;
+  height: 70%;
+  width: 100%;
+  position:absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+.layer:hover {
+  background-color: #00968770;
+  border-radius: 10px;
+}
+
+.bordpic {
+  border-radius: 10px;
+}
+
+.layer h3 {
+  width: 100%;
+  font-weight: 500px;
+  color: #fff;
+  font-size: 26px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.layer:hover h3 {
+  bottom: 44%;
+  opacity: 1;
+}
+
+#shspic {
+  display: flex;
+  height: 50%;
+  border-radius: 10px;
+  margin-top: 19%;
+}
+
+.layerSHS {
+  background-color: transparent;
+  height: 50%;
+  width: 100%;
+  position:absolute;
+  margin-top: 19%;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+.layerSHS:hover {
+  background-color: #00968770;
+  border-radius: 10px;
+}
+
+.layerSHS h3 {
+  width: 100%;
+  font-weight: 500px;
+  color: #fff;
+  font-size: 26px;
+  bottom: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  position:absolute;
+  transition: 0.5s;
+}
+
+.layerSHS:hover h3 {
+  bottom: 40%;
+  opacity: 1;
+}
+
+
+/* ENROLL */
+
+.enroll {
+  margin: 100px auto;
+  width: 65%;
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(./Images/crop.jpg);
+  background-position: center;
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 20px;
+  text-align: center;
+  padding: 100px 0;
+}
+
+
+.enroll h1 {
+  color: #fff;
+  margin-bottom: 40px;
+  padding: 0;
+}
+
+
+#enroll-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #009687;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+#enroll-btn:hover {
+  border: 1px solid #00968770;
+  background: #00968770;
+  transition: 1s;
+}
+
+
+
+
+
+/* FOOTER */
+
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: auto;
+  background: linear-gradient(to right,#009688, #04cab6, #03fae1);
+  color: #fff;
+  padding: 50px 0 20px;
+  border-radius: 200px;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+footer p{
+  color: #fff;
+}
+
+#textP {
+  margin-top: -20;
+  margin-left: -20%;
+  font-size: 13px;
+  color: #fff;
+}
+
+.footer1{
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.footerCol {
+  flex-basis: 25%;
+  padding: 10px;
+}
+
+.footerCol:nth-child(2), .footerCol:nth-child(3){
+  flex-basis: 15%;
+}
+
+.footerLogo {
+  width: 130px;
+  margin-bottom: 30px;
+}
+
+.footerCol h3{
+width: fit-content;
+margin-bottom: 40px;
+position: relative;
+}
+
+.email-id{
+  width: fit-content;
+  border-bottom: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+ul li {
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+ul li a{
+  text-decoration: none;
+  color: #fff;
+}
+
+form {
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 50px;
+}
+
+form .fa-regular{
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+form input {
+  width: 100%;
+  background: transparent;
+  color:#ffffff;
+  border: 0;
+  outline: none;
+}
+
+form button{
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+form button .fa-solid{
+  font-size: 16px;
+  color: #ccc;
+}
+
+.social-icons .fa-brands {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  color: #000;
+  background: #fff;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+
+hr {
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  margin: 20px auto;
+}
+
+.copyright {
+  text-align: center;
+}
+
+.copyright .fa-regular{
+  align-items:center;
+  width: 1.5%;
+}
+
+#footerH3 {
+  left: 10px;
+}
+
+.underline1 {
+  width: 135px;
+  height: 5px;
+  background: #767676;
+  border-radius: 3px;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  overflow: hidden;
+}
+
+.underline1 span{
+  width: 15px;
+  height: 100%;
+  background: #fff;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  animation: moving 2.5s linear infinite;
+}
+
+.underline2 {
+  width: 45px;
+  height: 5px;
+  background: #767676;
+  border-radius: 3px;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  overflow: hidden;
+}
+
+.underline2 span{
+  width: 15px;
+  height: 100%;
+  background: #fff;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  animation: moving 2.5s linear infinite;
+}
+
+
+
+.underline3 {
+  width: 97.8px;
+  height: 5px;
+  background: #767676;
+  border-radius: 3px;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  overflow: hidden;
+}
+
+.underline3 span{
+  width: 15px;
+  height: 100%;
+  background: #fff;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  animation: moving 2.5s linear infinite;
+}
+
+.underline4 {
+  width: 85px;
+  height: 5px;
+  background: #767676;
+  border-radius: 3px;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  overflow: hidden;
+}
+
+.underline4 span{
+  width: 15px;
+  height: 100%;
+  background: #fff;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  animation: moving 2.52s linear infinite;
+}
+
+
+@keyframes moving {
+  0%{
+    left: -20px;
+  }
+  100%{
+    left: 100%;
+  }
+}
+
+
+
+
+
+
+
+
