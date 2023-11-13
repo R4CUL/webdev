@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+#container {
+    display: flex;
+    place-content: center;
+    justify-content:flex-start;
+    margin-top: -0.5%;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+#formContainer {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 0%;
+    gap: 3px;
+}
+
+#btnSubmit {
+    margin-top: 2%;
+    margin-left: 13.8%;
+    width: 15%;
+    height: 5%;
+}
+
+body {
+  background-image: url('./two.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+  .h11 {
+    color: #020202;
+    margin-left: 10%;
+  }
+
+  .h11 {
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    animation-delay: 1s;
+  }
+
+  .h22 {
+    color: #fff;
+    margin-left: 20%;
+  }
+
+  .h22 {
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    animation-delay: 1s;
+  }
+
+  .labelContainer {
+    margin-left: 5.5%;
+  }
+
+  .labelMI {
+    margin-left: 10.5%;
+  }
+
+  #birthDates {
+    margin-left: 1.8%;
+  }
+
+  .labelBirthD {
+    margin-left: 6.5%;
+  }
+
+  .labelAdd {
+    margin-left: 7%;
+  }
+  
+  .labelCon {
+    margin-left: 1.9%;
+  }
+
+  .labelCour {
+    margin-left: 7.8%;
+  }  
+
+  
+   .animate {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+  }
+
+  @-webkit-keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+  }
+
+  @keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+  }
+}
+
+  .fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+  }

@@ -1,0 +1,85 @@
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./forms.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+
+  <div id="container">
+    <div id="formContainer">
+        <h1 class="h11 animate fadeIn">Input</h1>
+         
+        <div class="h11 animate fadeIn">
+            <label class="labelContainer"><b>Student ID</b></label><br>
+            <input id="inputId" type="number"/>
+        </div>
+
+        <div class="h11 animate fadeIn">
+            <label class="labelContainer"><b>First Name</b></label><br>
+            <input id="iFName" type="text"/>
+        </div>
+        
+        <div class="h11 animate fadeIn">
+            <label class="labelContainer"><b>Last Name</b></label><br>
+            <input id="iLName" type="text"/>
+        </div>
+
+        <div class="h11 animate fadeIn">
+            <label class="labelMI"><b>M.I</b></label><br>
+            <input id="miName" type="text"/>
+        </div>
+
+        <div class="h11 animate fadeIn labelBirth">
+            <label class="labelBirthD"><b>Birthdate</b></label><br>
+            <input type="date" id="birthDates">
+            
+        </div>
+
+        <div class="h11 animate fadeIn">
+            <label class="labelAdd"><b>Gender</b></label><br>
+            <input type="radio" id="male" name="genders" value="Male">
+            <label>Male</label><br>
+            <input type="radio" id="female" name="genders" value="Female">
+            <label>Female</label><br>
+            <input type="radio" id="others" name="genders" value="Others">
+            <label>Others</label><br>
+        </div>
+
+        <div class="h11 animate fadeIn">
+            <label class="labelAdd"><b>Address</b></label><br>
+            <input id="addy" type="text"/>
+        </div>
+
+        <div class="h11 animate fadeIn">
+            <label class="labelCon"><b>Contact Number</b></label><br>
+            <input id="num" type="text"/>
+        </div>
+     
+        <div class="h11 animate fadeIn">
+            <label class="labelCour"><b>Course</b></label><br>
+            <input id="kurso" type="text" />
+        </div>
+            <button id="btnSubmit" class="h11 animate fadeIn">Submit</button>
+        </div>
+
+    <div class="h22 animate fadeIn">
+        <h1>Output</h1>
+        <label id="L1"></label>
+        <label id="L2"></label>
+        <label id="L2Age"></label>
+        <label id="L3"></label>
+        <label id="L4"></label>
+        
+    </div>
+</div>
+
+
+</body>
+<script src="./forms.js"></script>
+
+</html>
